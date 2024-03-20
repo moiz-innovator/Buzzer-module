@@ -1,0 +1,13 @@
+#define BUZZER_PIN 13 // Define the pin connected to the buzzer module
+
+void setup() {
+  pinMode(BUZZER_PIN, OUTPUT); // Set the buzzer pin as an output
+}
+
+void loop() {
+  // Make the buzzer beep for 100 milliseconds
+  tone(BUZZER_PIN, 1000); // 1000 Hz frequency
+  delay(100);
+  noTone(BUZZER_PIN);
+  delay(100);
+}
